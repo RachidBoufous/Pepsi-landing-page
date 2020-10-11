@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 *{
     padding: 0;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
 }
 
 .bigContainer{
@@ -60,4 +62,111 @@
     text-decoration: none;
     color:white;
     font-weight: bold;
+    text-align: center;
 }
+
+/* -- HERO IMAGE STARTS HERE -- */
+
+/*display and aread for the hero aread */
+.heroImg{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto ;  
+}
+
+.leftHeroText{
+    grid-column: 1/2;
+    grid-row: 1/2;
+   
+    
+}
+.rightHeroIamge{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    
+    display: flex;
+    
+}
+.footer{
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+
+/* hero text style */
+.heroImg > .leftHeroText > h1{
+    color:white;
+    font-size: 5em;
+    font-weight: bolder;
+    line-height: 1em;
+    margin: 4px 0 4px 0;
+}
+.heroImg > .leftHeroText > p{
+    color:white;
+    display: block;
+    font-size: 1.4em;
+    margin: 1em 0 1em 0;
+}
+.heroImg > .leftHeroText > a{
+    background-color: #DFDDDF;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: .9em 4em;
+    font-size: .9em;
+    margin: .5em 0 .5em 0;
+    border-radius: 3em;
+}
+
+/*hero image style*/
+
+.heroImg .rightHeroIamge > #heroImg {
+    height:auto;
+    
+}
+
+
+
+/* addjust margins and padding for the hero image */
+
+.leftHeroText{
+    width: 100%;
+    height: auto;
+    padding: 6em 16em 0em 6em
+}
+
+.rightHeroIamge{
+    width: 100%;
+    height: auto;
+    padding: 3em 8em 0em 0em;
+    margin-right:14em;
+}
+
+
+/*social media logos*/
+.heroImg > .rightHeroIamge > .socialMedia {
+  
+   display: inline;
+   padding: 1em 1em;
+   margin: 10em 1em 0em -5em ;
+    
+}
+
+
+/*hovering pepsies resies*/
+
+.footer > a > img{
+    width: 3em;
+    margin: -1em;
+    height: auto;
+    padding: 0em 3em 2em 3em;
+    position: relative;
+    transition:  .5s ;
+}
+
+.footer > a > img:hover{
+    
+    transform: translateY(-1em);
+    
+}
+
+
