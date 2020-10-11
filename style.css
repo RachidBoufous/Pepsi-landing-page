@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.bigContainer{
+    background-color: #0261BF;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: .3fr 4fr ;
+    grid-template-areas: 
+    "N"
+    "H"
+    ;
+}
+
+/*define areas for the main container*/
+
+.navBar{
+    grid-area: N;
+    padding: 1em;
+}
+.heroImg{
+    grid-area: H;
+}
+
+/*nav bar */
+
+.navBar{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "P X X X R R R R"
+    ;
+}
+
+/*nav bar aread defining */
+.Plogo{
+    grid-area: P;
+}
+.rightLinks{
+    grid-area: R;
+}
+
+/* nav bar: image adjust */
+.Plogo > img {
+    padding: auto;
+    width: 5em;
+    height: auto;
+}
+
+/* nav bar : links */
+.navBar > .rightLinks > a{
+    padding: 1.7em;
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
