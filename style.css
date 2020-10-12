@@ -148,12 +148,16 @@
 
 
 /*social media logos*/
-.heroImg > .rightHeroIamge > .socialMedia {
-  
-   display: inline;
-   padding: 1em 1em;
-   margin: 10em 1em 0em -5em ;
-    
+.heroImg > .rightHeroIamge > .socialMedia > img {
+   display: inline-block;
+   width: 10em;
+   height: auto;
+}
+.heroImg > .rightHeroIamge > .socialMedia{
+    margin-top: 12em;
+    right: 0em;
+    margin-right: -4em;
+    box-sizing: border-box;
 }
 
 
