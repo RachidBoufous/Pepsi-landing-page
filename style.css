@@ -182,11 +182,18 @@
 
 
 @media screen and (max-width:800px){
+    
+    .bigContainer,html,body{
+        box-sizing: border-box;
+        max-width: 100%
+    }
     /* nav bar change style */
     .navBar {
         display: flex;
         flex-direction: column;
         padding: 1em 0;
+        box-sizing: border-box;
+        max-width: 100%
     }
     .navBar > .rightLinks{
         display: flex;
@@ -235,6 +242,32 @@
             
             
     }
+    
+    /*hero pepsi image*/
+    
+    .heroImg > .rightHeroIamge{
+        display: flex;
+        flex-direction: column;
+        padding:1em;
+        margin:0;
+    }
+    .heroImg > .rightHeroIamge > #heroImg1{
+        max-height: 18em;
+        width: auto;
+        margin-top: 1em;
+    }
+    
+    .heroImg > .rightHeroIamge > .socialMedia { 
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        margin: 3em 0em
+    }
+    
+    
+    
     
 }
 
